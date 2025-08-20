@@ -600,16 +600,16 @@ const AddProductModal: React.FC<AddProductModalProps> = ({
         serials: hasSerial ? serials.map((s) => s.serialNumber) : [],
         variablesProduct: productHasVariants
           ? productVariants.map((v2) => ({
-              attribute: v2.attribute,
-              costPrice: v2.costPrice,
-              sellPrice: v2.sellPrice,
-              stock: variantManagesSerial ? v2.serials?.length || 0 : v2.stock,
-              mainImage: v2.mainImage,
-              listImage: v2.listImage || [],
-              isDelete: false,
-              isSerial: variantManagesSerial,
-              serials: variantManagesSerial ? v2.serials : [],
-            }))
+            attribute: v2.attribute,
+            costPrice: v2.costPrice,
+            sellPrice: v2.sellPrice,
+            stock: variantManagesSerial ? v2.serials?.length || 0 : v2.stock,
+            mainImage: v2.mainImage,
+            listImage: v2.listImage || [],
+            isDelete: false,
+            isSerial: variantManagesSerial,
+            serials: variantManagesSerial ? v2.serials : [],
+          }))
           : [],
       };
 
@@ -1231,10 +1231,10 @@ const AddProductModal: React.FC<AddProductModalProps> = ({
                     barcodeValidation.isChecking
                       ? "validating"
                       : barcodeValidation.available === false
-                      ? "error"
-                      : barcodeValidation.available === true
-                      ? "success"
-                      : ""
+                        ? "error"
+                        : barcodeValidation.available === true
+                          ? "success"
+                          : ""
                   }
                   help={
                     barcodeValidation.message && (
@@ -1667,13 +1667,13 @@ const AddProductModal: React.FC<AddProductModalProps> = ({
                                   fileList={
                                     valueObj.imageUrl
                                       ? [
-                                          {
-                                            uid: "-1",
-                                            name: "thumb.png",
-                                            status: "done",
-                                            url: valueObj.imageUrl,
-                                          },
-                                        ]
+                                        {
+                                          uid: "-1",
+                                          name: "thumb.png",
+                                          status: "done",
+                                          url: valueObj.imageUrl,
+                                        },
+                                      ]
                                       : []
                                   }
                                   maxCount={1}

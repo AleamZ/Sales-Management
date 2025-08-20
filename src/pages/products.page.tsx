@@ -867,6 +867,7 @@ const ProductsPage = () => {
             "https://phutungnhapkhauchinhhang.com/wp-content/uploads/2020/06/default-thumbnail.jpg"
           } // Fallback image
           alt={record?.name}
+          fallback="https://phutungnhapkhauchinhhang.com/wp-content/uploads/2020/06/default-thumbnail.jpg"
           width={50}
           height={50}
           style={{ objectFit: "cover" }}
@@ -1274,6 +1275,7 @@ const ProductsPage = () => {
                         "https://via.placeholder.com/60"
                       }
                       alt={record?.name}
+                      fallback="https://phutungnhapkhauchinhhang.com/wp-content/uploads/2020/06/default-thumbnail.jpg"
                       width={60}
                       height={60}
                       style={{ objectFit: "cover" }}

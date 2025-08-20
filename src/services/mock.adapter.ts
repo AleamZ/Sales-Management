@@ -257,25 +257,24 @@ export const createMockAdapter = (): AxiosAdapter => {
 
         // AUTH/STUBS
         if (url === "/auth/login" && method === "post") {
-            // Create a simple mock JWT (header.payload.signature) with role and name
-            const header = btoa(JSON.stringify({ alg: "HS256", typ: "JWT" }))
-                .replace(/=+$/g, "")
-                .replace(/\+/g, "-")
-                .replace(/\//g, "_");
-            const payload = btoa(
-                JSON.stringify({
-                    sub: "u1",
-                    userId: "u1",
-                    name: "Nguyễn Tiến Đạt",
-                    email: "tiendat@gmail.com",
-                    role: "ADMIN",
-                    iat: Math.floor(Date.now() / 1000),
-                    exp: Math.floor(Date.now() / 1000) + 60 * 60 * 8,
-                })
-            )
-                .replace(/=+$/g, "")
-                .replace(/\+/g, "-")
-                .replace(/\//g, "_");
+            // UTF-8 safe Base64URL encoder
+            const base64UrlEncode = (obj: any) => {
+                const json = JSON.stringify(obj);
+                // encodeURIComponent handles UTF-8; unescape makes it Latin1 for btoa
+                const utf8 = unescape(encodeURIComponent(json));
+                const base64 = btoa(utf8);
+                return base64.replace(/=+$/g, "").replace(/\+/g, "-").replace(/\//g, "_");
+            };
+            const header = base64UrlEncode({ alg: "HS256", typ: "JWT" });
+            const payload = base64UrlEncode({
+                sub: "u1",
+                userId: "u1",
+                name: "Nguyễn Tiến Đạt",
+                email: "tiendat@gmail.com",
+                role: "ADMIN",
+                iat: Math.floor(Date.now() / 1000),
+                exp: Math.floor(Date.now() / 1000) + 60 * 60 * 8,
+            });
             const token = `${header}.${payload}.signature`;
             return toAxiosResponse(config, { statusCode: 200, ok: true, data: { accessToken: token, refreshToken: "demo-refresh" }, message: "OK" });
         }

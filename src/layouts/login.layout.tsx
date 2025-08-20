@@ -15,6 +15,7 @@ const LoginLayout = () => {
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const demoCredentials = { email: "tiendat@gmail.com", password: "123456" };
 
   const onFinish = async (values: LoginRequest) => {
     setLoading(true);
@@ -135,6 +136,23 @@ const LoginLayout = () => {
               <Link to="/forgot-password">
                 Quên mật khẩu?
               </Link>
+            </Form.Item>
+
+            <Form.Item style={{ marginTop: 12 }}>
+              <div style={{
+                textAlign: 'center',
+                marginBottom: 8,
+                color: '#8c8c8c',
+                fontSize: 12
+              }}>
+                Tài khoản demo: {demoCredentials.email} / {demoCredentials.password}
+              </div>
+              <Button
+                block
+                onClick={() => form.setFieldsValue(demoCredentials)}
+              >
+                Tự động điền tài khoản demo
+              </Button>
             </Form.Item>
           </Form>
         </Card>
