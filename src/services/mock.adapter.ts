@@ -9,13 +9,13 @@ import top10SanPham from "../fakeData/Top10SanPham.json";
 
 type AnyRecord = Record<string, any>;
 
-const toAxiosResponse = (config: AnyRecord, data: any, status = 200): AxiosResponse => ({
+const toAxiosResponse = (config: any, data: any, status = 200): AxiosResponse<any> => ({
     data,
     status,
     statusText: status === 200 ? "OK" : "ERROR",
     headers: {},
     config,
-});
+} as AxiosResponse<any>);
 
 const delay = (ms = 150) => new Promise((r) => setTimeout(r, ms));
 
