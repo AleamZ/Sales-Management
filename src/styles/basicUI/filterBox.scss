@@ -1,0 +1,44 @@
+.filter-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 16px;
+    overflow: hidden;
+    width: fit-content;
+
+    .filter-box-header {
+        display: flex;
+        align-items: center;
+        padding: 12px 16px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #f9f9f9;
+        }
+    }
+
+    .filter-box-collapse-icon {
+        margin-right: 8px;
+        font-size: 12px;
+        color: #999;
+    }
+
+    .filter-box-title {
+        margin: 0 !important;
+        font-size: 16px !important;
+    }
+
+    .filter-box-divider {
+        margin: 0 !important;
+    }
+
+    .filter-box-content {
+        padding: 16px;
+    }
+
+    &.filter-box-collapsed {
+        .filter-box-header {
+            border-bottom: none;
+        }
+    }
+}

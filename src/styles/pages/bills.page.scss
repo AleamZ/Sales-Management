@@ -1,0 +1,102 @@
+.bills-page {
+    // background-color: aqua;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: start;
+    align-items: start;
+
+    .bills-page__left {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+
+        .bills-page__left__title {
+            font-weight: bolder;
+            font-size: x-large;
+        }
+
+        .bills-page__left__filter {
+            width: 100%; // Ensure filter container takes full width
+
+            // Target FilterBox components within this container
+            .filter-box {
+                width: 100%; // Make FilterBox take full width of parent
+                box-sizing: border-box; // Include padding and border in width calculation
+
+                // Ensure content within FilterBox also takes full width
+                .filter-box-content {
+                    width: 100%;
+                }
+
+                // Make TimeFilterPopup button take full width
+                .time-filter-popup {
+                    width: 100%;
+
+                    .time-filter-button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .bills-page__left__listX {
+            width: 100%;
+            margin-top: 16px;
+        }
+    }
+
+    .bills-page__right {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+        padding-left: 20px;
+
+        .bills-page__right__search {
+            width: 100%;
+        }
+
+        .bills-page__right__title {
+            font-weight: bolder;
+            font-size: x-large;
+        }
+
+        .bills-page__right__table {
+            width: 100%;
+
+            .bills-page__right__filter-info {
+                width: 100%;
+                background-color: #f5f5f5;
+                border-radius: 4px;
+
+                .p {
+                    margin-top: 0px !important;
+                    margin-bottom: 0px !important;
+
+                }
+            }
+
+            .bills-table {
+                width: 100%;
+
+                .table-row-light {
+                    background-color: #ffffff;
+                }
+
+                .table-row-dark {
+                    background-color: #f9f9f9;
+                }
+            }
+        }
+
+        .bills-page__right__listX {
+            width: 100%;
+            margin-top: 16px;
+        }
+    }
+}

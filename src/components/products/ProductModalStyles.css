@@ -1,0 +1,67 @@
+
+/* Fixed height tabs content */
+.product-tabs .ant-tabs-content {
+    height: 100%;
+    position: relative;
+}
+
+.ant-tabs-tabpane {
+    position: relative;
+    width: 100%;
+}
+
+/* Hide inactive tab content properly */
+.ant-tabs-tabpane-hidden {
+    display: none !important;
+}
+
+/* Make modal body scroll when needed */
+.view-product-modal .ant-modal-body,
+.add-product-form .ant-modal-body {
+    position: relative;
+    overflow: auto;
+}
+
+/* Product info tab styling */
+.product-info-tab {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-info-image {
+    flex: 0 0 220px;
+}
+
+.product-info-details {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Serial management styling */
+.serial-management .ant-table-wrapper {
+    margin-top: 16px;
+}
+
+/* Image section styling */
+.product-images-section {
+    margin-top: 16px;
+}
+
+/* Fix for quill editor in a tab */
+.quill-editor-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.quill-editor-container .quill {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.quill-editor-container .ql-container {
+    flex: 1;
+    overflow: auto;
+}

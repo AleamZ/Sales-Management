@@ -1,0 +1,517 @@
+.products-page {
+    // background-color: aqua;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: start;
+    align-items: start;
+    overflow: hidden;
+    min-height: 0;
+
+    .products-page__left {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+        min-width: 250px;
+        max-width: 100%;
+        margin-right: 20px;
+
+        .products-page__left__title {
+            font-weight: bolder;
+            font-size: x-large;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
+        }
+
+        .products-page__left__listX {
+            width: 100%;
+            min-width: 250px;
+            overflow: hidden;
+
+            // Customize the ListX component styles for product page
+            .list-x-container {
+                border-radius: 4px;
+                width: 100%;
+                min-width: 0; // Allow shrinking below content size
+                overflow: hidden;
+
+                .list-x-title-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 12px 8px; // Reduced horizontal padding for zoom scenarios
+                    min-height: 44px;
+
+                    .list-x-title-content {
+                        display: flex;
+                        align-items: center;
+                        flex: 1;
+                        min-width: 0; // Allow shrinking
+
+                        .list-x-title {
+                            font-size: 14px;
+                            font-weight: 500;
+                            margin: 0;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            flex: 1;
+                            min-width: 0;
+                        }
+                    }
+
+                    .list-x-add-icon {
+                        flex-shrink: 0;
+                        width: 24px;
+                        height: 24px;
+                        margin-left: 8px;
+                    }
+                }
+
+                .list-x-item {
+                    padding: 8px; // Reduced padding for better space utilization
+
+                    .list-x-item-content {
+                        .list-x-item-title {
+                            font-size: 13px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+
+                .list-x-search {
+                    padding: 8px; // Reduced padding
+
+                    .ant-input-affix-wrapper {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    .products-page__right {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        overflow: hidden;
+
+        // Create a container for search and button sections
+        .products-page__right__top-row {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .products-page__right__search {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .products-page__right__button {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .ant-space {
+                display: flex;
+                align-items: center;
+            }
+
+            // Style for the dropdown menu
+            .ant-dropdown-menu {
+                border-radius: 4px;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            }
+
+            .ant-dropdown-menu-item {
+                padding: 8px 16px;
+
+                &:hover {
+                    background-color: #f0f5ff;
+                }
+            }
+
+            .ant-select {
+                .ant-select-selector {
+                    border-radius: 2px;
+                }
+
+                .ant-select-selection-item {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+        .products-page__right__table {
+            width: 100%;
+            min-height: 650px; // Add minimum height to accommodate the taller table
+
+            .ant-table-wrapper {
+                height: 100%;
+            }
+
+            .ant-spin-nested-loading,
+            .ant-spin-container {
+                height: 100%;
+            }
+
+            // Custom styling for the table
+            .custom-table {
+
+                // Remove vertical dividers
+                .ant-table-cell {
+                    border-right: none !important;
+                }
+
+                // Set contrasting colors for rows
+                .table-row-light {
+                    background-color: #ffffff;
+                }
+
+                .table-row-dark {
+                    background-color: #f0f5ff; // Light blue background for contrast
+                }
+
+                // Keep horizontal lines but make them subtle
+                .ant-table-thead>tr>th {
+                    border-bottom: 1px solid #f0f0f0;
+                    border-right: none;
+                }
+
+                .ant-table-tbody>tr>td {
+                    border-bottom: 1px solid #f0f0f0;
+                }
+
+                // Highlight row on hover
+                .ant-table-tbody>tr:hover>td {
+                    background-color: #e6f7ff !important; // Light blue on hover
+                }
+            }
+
+            // Enhance checkbox styling
+            .ant-checkbox-wrapper {
+                margin-right: 8px;
+            }
+
+            // Style for selected rows
+            .ant-table-row-selected>td {
+                background-color: #e6f7ff !important;
+            }
+
+            // Add cursor pointer to rows
+            .ant-table-tbody>tr {
+                cursor: pointer;
+
+                &:hover {
+                    td {
+                        background-color: #e6f7ff !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//mobile view
+.isMobile-products-page-top {
+    padding: 10px 10px 0px 10px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 10px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    .isMobile-products-page-top-row {
+        display: flex;
+        justify-content: space-between;
+
+        .isMobile-products-page-title {
+            font-weight: bolder;
+            font-size: x-large;
+            margin-bottom: 16px;
+        }
+
+        .isMobile-products-page-search {
+            display: flex;
+            justify-content: end;
+
+            .isMobile-products-page-search-input {
+                width: 80%;
+            }
+        }
+    }
+
+
+    .isMobile-products-page-filter-container {
+        padding-bottom: 10px;
+        display: flex;
+        // background-color: aqua;
+        justify-content: space-evenly;
+
+        .isMobile-products-page-filter-button {
+            background-color: aqua;
+        }
+    }
+
+    .isMobile-products-page-inventory {
+        .isMobile-products-page-inventory-title {
+            font-weight: 500;
+            font-size: large;
+        }
+    }
+
+    .isMobile-products-page-add-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin-left: auto;
+    }
+}
+
+// ViewProductModal styles
+.view-product-modal {
+    .ant-modal-content {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .ant-tabs-nav {
+        margin-bottom: 20px;
+    }
+
+    .product-info-tab {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+
+        .product-info-image {
+            flex: 0 0 200px;
+            text-align: center;
+
+            img {
+                border-radius: 4px;
+                object-fit: cover;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .product-info-details {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        &.editing {
+            .product-info-image {
+                text-align: center;
+
+                .ant-form-item {
+                    text-align: left;
+                    margin-top: 10px;
+                }
+            }
+
+            .product-info-details {
+                .ant-form-item {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+
+    .product-description-tab {
+        padding: 10px;
+        background-color: #fafafa;
+        border-radius: 4px;
+        min-height: 100px;
+    }
+
+    .product-serial-tab {
+        .ant-table {
+            margin-top: 10px;
+        }
+    }
+
+    // For editing mode
+    .product-edit-form {
+        .ant-form-item-label {
+            font-weight: 500;
+        }
+
+        .ant-input-number,
+        .ant-select {
+            width: 100%;
+        }
+    }
+
+    // Responsive adjustments
+    @media (max-width: 576px) {
+        .product-info-tab {
+            flex-direction: column;
+
+            .product-info-image {
+                width: 100%;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ant-table-cell {
+    padding: 10px !important;
+}
+
+
+
+// Responsive design for various zoom levels and screen sizes
+@media screen and (max-width: 1200px) {
+    .products-page {
+        .products-page__left {
+            min-width: 220px;
+
+            .products-page__left__title {
+                font-size: large;
+            }
+
+            .products-page__left__listX {
+                min-width: 200px;
+
+                .list-x-container {
+                    .list-x-title-container {
+                        padding: 10px 6px;
+
+                        .list-x-title-content .list-x-title {
+                            font-size: 13px;
+                        }
+
+                        .list-x-add-icon {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+
+                    .list-x-item {
+                        padding: 6px;
+
+                        .list-x-item-content .list-x-item-title {
+                            font-size: 12px;
+                        }
+                    }
+
+                    .list-x-search {
+                        padding: 6px;
+
+                        .ant-input-affix-wrapper {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .products-page {
+        .products-page__left {
+            min-width: 180px;
+
+            .products-page__left__title {
+                font-size: medium;
+            }
+
+            .products-page__left__listX {
+                min-width: 160px;
+
+                .list-x-container {
+                    .list-x-title-container {
+                        padding: 8px 4px;
+                        min-height: 40px;
+
+                        .list-x-title-content .list-x-title {
+                            font-size: 12px;
+                        }
+
+                        .list-x-add-icon {
+                            width: 18px;
+                            height: 18px;
+                            margin-left: 4px;
+                        }
+                    }
+
+                    .list-x-item {
+                        padding: 4px;
+
+                        .list-x-item-content .list-x-item-title {
+                            font-size: 11px;
+                        }
+                    }
+
+                    .list-x-search {
+                        padding: 4px;
+
+                        .ant-input-affix-wrapper {
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .view-product-modal {
+        .ant-modal-body {
+            padding: 16px;
+        }
+
+        .product-info-tab {
+            flex-direction: column;
+
+            .product-info-image {
+                flex: 1;
+                margin: 0 auto 20px;
+            }
+
+            .product-info-details {
+                flex: 1;
+                width: 100%;
+            }
+        }
+    }
+}

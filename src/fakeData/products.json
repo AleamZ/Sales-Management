@@ -1,0 +1,314 @@
+[
+    {
+        "productId": "SP001",
+        "imageUrl": [
+            "https://imagedelivery.net/ZeGtsGSjuQe1P3UP_zk3fQ/840d1e3b-7a18-4207-acfd-aa7b505bde00/storedata",
+            "https://example.com/images/canon-eos-r6-2.jpg",
+            "https://example.com/images/canon-eos-r6-3.jpg"
+        ],
+        "productName": "Canon EOS R6",
+        "sellingPrice": 25000000,
+        "costPrice": 20000000,
+        "inventory": 15,
+        "createdAt": "2024-01-15T08:30:00Z",
+        "categoryId": "cat001",
+        "brandId": "1",
+        "isSerial": true,
+        "serial": [
+            {
+                "id": "serial001",
+                "serialNumber": "SN1234567890",
+                "isSold": false
+            },
+            {
+                "id": "serial002",
+                "serialNumber": "SN1234117890",
+                "isSold": false
+            },
+            {
+                "id": "serial005",
+                "serialNumber": "SN1234157890",
+                "isSold": false
+            },
+            {
+                "id": "serial006",
+                "serialNumber": "SN2234117890",
+                "isSold": false
+            },
+            {
+                "id": "serial007",
+                "serialNumber": "SN1235567890",
+                "isSold": false
+            },
+            {
+                "id": "serial008",
+                "serialNumber": "SN1234117810",
+                "isSold": false
+            }
+        ],
+        "description": "Canon EOS R6 is a full-frame mirrorless camera with 20fps continuous shooting, Dual Pixel autofocus, and 4K video recording."
+    },
+    {
+        "productId": "SP002",
+        "imageUrl": [
+            "https://example.com/images/canon-eos-r6.jpg",
+            "https://example.com/images/canon-eos-r6-2.jpg",
+            "https://example.com/images/canon-eos-r6-3.jpg"
+        ],
+        "productName": "Nikon Z6 II",
+        "sellingPrice": 42000000,
+        "costPrice": 35000000,
+        "inventory": 12,
+        "createdAt": "2024-01-18T09:15:00Z",
+        "categoryId": "cat001",
+        "brandId": "2",
+        "isSerial": true,
+        "serial": [
+            {
+                "id": "serial003",
+                "serialNumber": "SN12345676150",
+                "isSold": false
+            },
+            {
+                "id": "serial004",
+                "serialNumber": "SN1234567450",
+                "isSold": true
+            }
+        ],
+        "description": "Canon EOS R6 is a full-frame mirrorless camera with 20fps continuous shooting, Dual Pixel autofocus, and 4K video recording."
+    },
+    {
+        "productId": "SP003",
+        "imageUrl": [
+            "https://example.com/images/canon-eos-r6.jpg",
+            "https://example.com/images/canon-eos-r6-2.jpg",
+            "https://example.com/images/canon-eos-r6-3.jpg"
+        ],
+        "productName": "Sony Alpha A7 IV",
+        "sellingPrice": 51000000,
+        "costPrice": 45000000,
+        "inventory": 8,
+        "createdAt": "2024-01-20T10:45:00Z",
+        "categoryId": "cat001",
+        "brandId": "3",
+        "isSerial": false,
+        "serial": [],
+        "description": "Canon EOS R6 is a full-frame mirrorless camera with 20fps continuous shooting, Dual Pixel autofocus, and 4K video recording."
+    },
+    {
+        "productId": "SP004",
+        "imageUrl": [
+            "https://example.com/images/canon-eos-r6.jpg",
+            "https://example.com/images/canon-eos-r6-2.jpg",
+            "https://example.com/images/canon-eos-r6-3.jpg"
+        ],
+        "productName": "Fujifilm X-T5",
+        "sellingPrice": 38500000,
+        "costPrice": 33000000,
+        "inventory": 10,
+        "createdAt": "2024-01-25T11:30:00Z",
+        "categoryId": "cat001",
+        "brandId": "4",
+        "isSerial": false,
+        "serial": [],
+        "description": "Canon EOS R6 is a full-frame mirrorless camera with 20fps continuous shooting, Dual Pixel autofocus, and 4K video recording."
+    },
+    {
+        "productId": "SP005",
+        "imageUrl": [
+            "https://example.com/images/canon-eos-r6.jpg",
+            "https://example.com/images/canon-eos-r6-2.jpg",
+            "https://example.com/images/canon-eos-r6-3.jpg"
+        ],
+        "productName": "Canon RF 24-70mm f/2.8L IS USM",
+        "sellingPrice": 56000000,
+        "costPrice": 48000000,
+        "inventory": 6,
+        "createdAt": "2024-02-01T14:20:00Z",
+        "categoryId": "cat002",
+        "brandId": "1",
+        "isSerial": false,
+        "serial": [],
+        "description": "Canon EOS R6 is a full-frame mirrorless camera with 20fps continuous shooting, Dual Pixel autofocus, and 4K video recording."
+    },
+    {
+        "productId": "SP006",
+        "imageUrl": [
+            "https://example.com/images/canon-eos-r6.jpg",
+            "https://example.com/images/canon-eos-r6-2.jpg",
+            "https://example.com/images/canon-eos-r6-3.jpg"
+        ],
+        "productName": "Nikon Z 70-200mm f/2.8 VR S",
+        "sellingPrice": 59500000,
+        "costPrice": 52000000,
+        "inventory": 5,
+        "createdAt": "2024-02-05T09:10:00Z",
+        "categoryId": "cat002",
+        "brandId": "2",
+        "isSerial": false,
+        "serial": [],
+        "description": "Canon EOS R6 is a full-frame mirrorless camera with 20fps continuous shooting, Dual Pixel autofocus, and 4K video recording."
+    },
+    {
+        "productId": "SP007",
+        "imageUrl": [
+            "https://example.com/images/canon-eos-r6.jpg",
+            "https://example.com/images/canon-eos-r6-2.jpg",
+            "https://example.com/images/canon-eos-r6-3.jpg"
+        ],
+        "productName": "Sony FE 85mm f/1.4 GM",
+        "sellingPrice": 46800000,
+        "costPrice": 39000000,
+        "inventory": 7,
+        "createdAt": "2024-02-10T13:45:00Z",
+        "categoryId": "cat002",
+        "brandId": "3",
+        "isSerial": false,
+        "serial": [],
+        "description": "Canon EOS R6 is a full-frame mirrorless camera with 20fps continuous shooting, Dual Pixel autofocus, and 4K video recording."
+    },
+    {
+        "productId": "SP008",
+        "imageUrl": [
+            "https://example.com/images/canon-eos-r6.jpg",
+            "https://example.com/images/canon-eos-r6-2.jpg",
+            "https://example.com/images/canon-eos-r6-3.jpg"
+        ],
+        "productName": "Sigma 35mm f/1.4 DG HSM Art",
+        "sellingPrice": 21500000,
+        "costPrice": 17000000,
+        "inventory": 11,
+        "createdAt": "2024-02-12T15:30:00Z",
+        "categoryId": "cat002",
+        "brandId": "10",
+        "isSerial": false,
+        "serial": [],
+        "description": "Canon EOS R6 is a full-frame mirrorless camera with 20fps continuous shooting, Dual Pixel autofocus, and 4K video recording."
+    },
+    {
+        "productId": "SP009",
+        "imageUrl": [
+            "https://example.com/images/canon-eos-r6.jpg",
+            "https://example.com/images/canon-eos-r6-2.jpg",
+            "https://example.com/images/canon-eos-r6-3.jpg"
+        ],
+        "productName": "Manfrotto MT190XPRO4 Aluminum Tripod",
+        "sellingPrice": 4500000,
+        "costPrice": 3500000,
+        "inventory": 20,
+        "createdAt": "2024-02-15T10:25:00Z",
+        "categoryId": "cat007",
+        "brandId": "6",
+        "isSerial": false,
+        "serial": [],
+        "description": "Canon EOS R6 is a full-frame mirrorless camera with 20fps continuous shooting, Dual Pixel autofocus, and 4K video recording."
+    },
+    {
+        "productId": "SP010",
+        "imageUrl": [
+            "https://example.com/images/canon-eos-r6.jpg",
+            "https://example.com/images/canon-eos-r6-2.jpg",
+            "https://example.com/images/canon-eos-r6-3.jpg"
+        ],
+        "productName": "Peak Design Slide Camera Strap",
+        "sellingPrice": 1800000,
+        "costPrice": 1200000,
+        "inventory": 25,
+        "createdAt": "2024-02-18T11:10:00Z",
+        "categoryId": "cat008",
+        "brandId": "4",
+        "isSerial": false,
+        "serial": [],
+        "description": "Canon EOS R6 is a full-frame mirrorless camera with 20fps continuous shooting, Dual Pixel autofocus, and 4K video recording."
+    },
+    {
+        "productId": "SP011",
+        "imageUrl": [
+            "https://example.com/images/canon-eos-r6.jpg",
+            "https://example.com/images/canon-eos-r6-2.jpg",
+            "https://example.com/images/canon-eos-r6-3.jpg"
+        ],
+        "productName": "Canon EOS R5 C Cinema Camera",
+        "sellingPrice": 95000000,
+        "costPrice": 85000000,
+        "inventory": 4,
+        "createdAt": "2024-02-20T09:30:00Z",
+        "categoryId": "cat004",
+        "brandId": "1",
+        "isSerial": false,
+        "serial": [],
+        "description": "Canon EOS R6 is a full-frame mirrorless camera with 20fps continuous shooting, Dual Pixel autofocus, and 4K video recording."
+    },
+    {
+        "productId": "SP012",
+        "imageUrl": [
+            "https://example.com/images/canon-eos-r6.jpg",
+            "https://example.com/images/canon-eos-r6-2.jpg",
+            "https://example.com/images/canon-eos-r6-3.jpg"
+        ],
+        "productName": "Sony ECM-B1M Shotgun Microphone",
+        "sellingPrice": 6500000,
+        "costPrice": 5200000,
+        "inventory": 15,
+        "createdAt": "2024-02-22T14:15:00Z",
+        "categoryId": "cat005",
+        "brandId": "3",
+        "isSerial": false,
+        "serial": [],
+        "description": "Canon EOS R6 is a full-frame mirrorless camera with 20fps continuous shooting, Dual Pixel autofocus, and 4K video recording."
+    },
+    {
+        "productId": "SP013",
+        "imageUrl": [
+            "https://example.com/images/canon-eos-r6.jpg",
+            "https://example.com/images/canon-eos-r6-2.jpg",
+            "https://example.com/images/canon-eos-r6-3.jpg"
+        ],
+        "productName": "Godox SL-60W LED Video Light",
+        "sellingPrice": 3900000,
+        "costPrice": 3000000,
+        "inventory": 18,
+        "createdAt": "2024-02-25T16:20:00Z",
+        "categoryId": "cat006",
+        "brandId": "5",
+        "isSerial": false,
+        "serial": [],
+        "description": "Canon EOS R6 is a full-frame mirrorless camera with 20fps continuous shooting, Dual Pixel autofocus, and 4K video recording."
+    },
+    {
+        "productId": "SP014",
+        "imageUrl": [
+            "https://example.com/images/canon-eos-r6.jpg",
+            "https://example.com/images/canon-eos-r6-2.jpg",
+            "https://example.com/images/canon-eos-r6-3.jpg"
+        ],
+        "productName": "Leica Q3 Full Frame Compact Camera",
+        "sellingPrice": 135000000,
+        "costPrice": 120000000,
+        "inventory": 3,
+        "createdAt": "2024-03-01T10:40:00Z",
+        "categoryId": "cat001",
+        "brandId": "7",
+        "isSerial": false,
+        "serial": [],
+        "description": "Canon EOS R6 is a full-frame mirrorless camera with 20fps continuous shooting, Dual Pixel autofocus, and 4K video recording."
+    },
+    {
+        "productId": "SP015",
+        "imageUrl": [
+            "https://example.com/images/canon-eos-r6.jpg",
+            "https://example.com/images/canon-eos-r6-2.jpg",
+            "https://example.com/images/canon-eos-r6-3.jpg"
+        ],
+        "productName": "Hasselblad 907X 50C Medium Format",
+        "sellingPrice": 175000000,
+        "costPrice": 155000000,
+        "inventory": 2,
+        "createdAt": "2024-03-05T11:05:00Z",
+        "categoryId": "cat001",
+        "brandId": "8",
+        "isSerial": false,
+        "serial": [],
+        "description": "Canon EOS R6 is a full-frame mirrorless camera with 20fps continuous shooting, Dual Pixel autofocus, and 4K video recording."
+    }
+]

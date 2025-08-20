@@ -1,0 +1,25 @@
+.dashboard-page {
+    background-color: rgba(0, 255, 255, 0);
+
+    .dashboard-page-dashboard-content {
+        .dashboard-content-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .dashboard-content-col-left {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding-right: 20px;
+            }
+
+            .dashboard-content-col-right {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+    }
+}

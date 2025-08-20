@@ -1,0 +1,47 @@
+[
+    {
+        "billId": "HD001",
+        "time": "2024-05-11T10:30:00",
+        "customerId": "KH001",
+        "totalAmount": 1500000,
+        "totalDiscount": 150000,
+        "priceAfterDiscount": 1350000,
+        "amountPaid": 1350000
+    },
+    {
+        "billId": "HD002",
+        "time": "2023-06-15T14:45:00",
+        "customerId": "KH002",
+        "totalAmount": 750000,
+        "totalDiscount": 50000,
+        "priceAfterDiscount": 700000,
+        "amountPaid": 700000
+    },
+    {
+        "billId": "HD003",
+        "time": "2023-06-16T09:15:00",
+        "customerId": "KH003",
+        "totalAmount": 2500000,
+        "totalDiscount": 250000,
+        "priceAfterDiscount": 2250000,
+        "amountPaid": 2000000
+    },
+    {
+        "billId": "HD004",
+        "time": "2023-06-16T16:20:00",
+        "customerId": "KH001",
+        "totalAmount": 800000,
+        "totalDiscount": 0,
+        "priceAfterDiscount": 800000,
+        "amountPaid": 800000
+    },
+    {
+        "billId": "HD005",
+        "time": "2023-06-17T11:05:00",
+        "customerId": "KH004",
+        "totalAmount": 3200000,
+        "totalDiscount": 320000,
+        "priceAfterDiscount": 2880000,
+        "amountPaid": 2880000
+    }
+]

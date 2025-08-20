@@ -1,0 +1,62 @@
+[
+    {
+        "productId": "12321",
+        "productName": "Canon EOS 5D Mark IV",
+        "totalRevenue": 10000000,
+        "totalQuantity": 100
+    },
+    {
+        "productId": "12322",
+        "productName": "Nikon D850",
+        "totalRevenue": 20000000,
+        "totalQuantity": 50
+    },
+    {
+        "productId": "12323",
+        "productName": "Sony A7 III",
+        "totalRevenue": 15000000,
+        "totalQuantity": 75
+    },
+    {
+        "productId": "12324",
+        "productName": "Fujifilm X-T3",
+        "totalRevenue": 12000000,
+        "totalQuantity": 60
+    },
+    {
+        "productId": "12325",
+        "productName": "Panasonic Lumix GH5",
+        "totalRevenue": 8000000,
+        "totalQuantity": 40
+    },
+    {
+        "productId": "12326",
+        "productName": "Olympus OM-D E-M1 Mark II",
+        "totalRevenue": 9000000,
+        "totalQuantity": 30
+    },
+    {
+        "productId": "12327",
+        "productName": "Leica M10-P",
+        "totalRevenue": 25000000,
+        "totalQuantity": 20
+    },
+    {
+        "productId": "12328",
+        "productName": "GoPro HERO9 Black",
+        "totalRevenue": 7000000,
+        "totalQuantity": 80
+    },
+    {
+        "productId": "12329",
+        "productName": "DJI Mavic Air 2",
+        "totalRevenue": 6000000,
+        "totalQuantity": 90
+    },
+    {
+        "productId": "12330",
+        "productName": "Apple iPhone 12 Pro Max",
+        "totalRevenue": 30000000,
+        "totalQuantity": 10
+    }
+]

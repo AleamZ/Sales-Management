@@ -1,0 +1,45 @@
+.dashboard-layout {
+    min-height: 120vh;
+    background-color: rgba(255, 0, 0, 0);
+
+
+
+    .dashboard-content {
+        padding: 0;
+        width: 100%;
+
+        .dashboard-row {
+            width: 100%;
+            min-height: calc(100vh - 64px); // Assuming header height is 64px
+
+            .dashboard-gutter-left,
+            .dashboard-gutter-right {}
+
+            .dashboard-main-content {
+                // padding: 24px 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+.isMobile {
+    display: none;
+}
+
+.isDesktop {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .isDesktop {
+        display: none;
+    }
+
+    .isMobile {
+        display: block;
+    }
+}

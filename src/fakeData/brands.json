@@ -1,0 +1,52 @@
+[
+    {
+        "id": "1",
+        "name": "Canon",
+        "isDeleted": false
+    },
+    {
+        "id": "2",
+        "name": "Nikon",
+        "isDeleted": false
+    },
+    {
+        "id": "3",
+        "name": "Sony",
+        "isDeleted": false
+    },
+    {
+        "id": "4",
+        "name": "Fujifilm",
+        "isDeleted": false
+    },
+    {
+        "id": "5",
+        "name": "Olympus",
+        "isDeleted": false
+    },
+    {
+        "id": "6",
+        "name": "Panasonic",
+        "isDeleted": false
+    },
+    {
+        "id": "7",
+        "name": "Leica",
+        "isDeleted": false
+    },
+    {
+        "id": "8",
+        "name": "Hasselblad",
+        "isDeleted": false
+    },
+    {
+        "id": "9",
+        "name": "Pentax",
+        "isDeleted": false
+    },
+    {
+        "id": "10",
+        "name": "Sigma",
+        "isDeleted": false
+    }
+]

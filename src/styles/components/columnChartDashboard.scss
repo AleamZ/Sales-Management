@@ -1,0 +1,71 @@
+.column-chart-dashboard {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+
+    .column-chart-dashboard-top {
+        display: flex;
+        justify-content: space-between;
+
+        .column-chart-dashboard-top-left {
+            display: flex;
+
+            .title {
+                font-size: 20px;
+                font-weight: 600;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+
+            .icon_totalRevenue,
+            .icon_totalProfit,
+            .icon_totalDebt,
+            .icon_actualRevenue {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                padding-left: 20px;
+
+                .icon {
+                    padding-right: 5px;
+                    color: #525252;
+                }
+            }
+
+            .icon_totalRevenue .totalRevenue {
+                color: #0070F4;
+                font-size: 15px;
+                font-weight: 700;
+            }
+
+            .icon_totalProfit .totalProfit {
+                color: #10B981;
+                font-size: 15px;
+                font-weight: 700;
+            }
+
+            .icon_totalDebt .totalDebt {
+                color: #ff7a00;
+                font-size: 15px;
+                font-weight: 700;
+            }
+
+            .icon_actualRevenue .actualRevenue {
+                color: #52c41a;
+                font-size: 15px;
+                font-weight: 700;
+            }
+        }
+
+        .select-time-period {
+            display: flex;
+            min-width: 110px;
+        }
+    }
+
+    .chart-time-unit {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+}

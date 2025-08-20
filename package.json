@@ -1,0 +1,48 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.76.1",
+    "@tanstack/react-query-devtools": "^5.76.1",
+    "@types/lodash.debounce": "^4.0.9",
+    "antd": "^5.24.9",
+    "axios": "^1.9.0",
+    "dayjs": "^1.11.13",
+    "jspdf": "^3.0.1",
+    "jspdf-autotable": "^5.0.2",
+    "lodash.debounce": "^4.0.8",
+    "react": "^18.3.1",
+    "react-barcode": "^1.6.1",
+    "react-dom": "^18.3.1",
+    "react-query": "^3.39.3",
+    "react-quill": "^2.0.0",
+    "react-router-dom": "^7.5.3",
+    "recharts": "^2.15.3",
+    "styled-components": "^6.1.18",
+    "uuid": "^11.1.0",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/node": "^22.15.3",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "sass": "^1.87.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.26.1",
+    "vite": "^6.3.1"
+  }
+}

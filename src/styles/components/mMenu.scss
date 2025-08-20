@@ -1,0 +1,55 @@
+.ant-menu-horizontal {
+    display: flex;
+    border-bottom: none;
+    background-color: #0874f4;
+
+    .ant-menu-item,
+    .ant-menu-submenu {
+        font-weight: 500;
+        color: #ffffff;
+
+
+        .ant-menu-title-content {
+            color: #ffffff;
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border-bottom-color: #ffffff;
+        }
+
+        .anticon {
+            color: #ffffff;
+        }
+
+        a {
+            color: #ffffff;
+
+            &:hover {
+                color: #ffffff;
+            }
+        }
+
+        &.ant-menu-item-selected {
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-bottom-color: #ffffff;
+
+            .anticon {
+                color: #ffffff;
+            }
+        }
+
+        // Add styling for active submenu
+        &.ant-menu-submenu-selected,
+        &.ant-menu-submenu-active {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-bottom-color: #ffffff;
+
+            .ant-menu-submenu-title {
+                color: #ffffff;
+            }
+        }
+    }
+}

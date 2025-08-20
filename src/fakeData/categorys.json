@@ -1,0 +1,50 @@
+[
+    {
+        "id": "cat001",
+        "title": "Máy ảnh",
+        "parentId": null,
+        "isParent": true
+    },
+    {
+        "id": "cat002",
+        "title": "Lens ảnh",
+        "parentId": null,
+        "isParent": true
+    },
+    {
+        "id": "cat003",
+        "title": "Phụ kiện máy ảnh",
+        "parentId": null,
+        "isParent": true
+    },
+    {
+        "id": "cat004",
+        "title": "Thiết bị quay phim",
+        "parentId": null,
+        "isParent": true
+    },
+    {
+        "id": "cat005",
+        "title": "Thiết bị âm thanh",
+        "parentId": null,
+        "isParent": true
+    },
+    {
+        "id": "cat006",
+        "title": "Thiết bị chiếu sáng",
+        "parentId": null,
+        "isParent": true
+    },
+    {
+        "id": "cat007",
+        "title": "Chân máy ảnh",
+        "parentId": "cat003",
+        "isParent": true
+    },
+    {
+        "id": "cat008",
+        "title": "Dây Đeo máy ảnh",
+        "parentId": "cat003",
+        "isParent": true
+    }
+]

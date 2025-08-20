@@ -1,0 +1,31 @@
+.take-care-customer-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(33, 211, 255, 0.329) 0%, rgb(137, 149, 255)100%);
+    padding: 20px;
+    border-radius: 10px;
+
+    .title {
+        font-size: 16px;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        margin-bottom: 20px;
+        align-self: start;
+
+    }
+
+    .zaloQR {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+
+
+        }
+    }
+}
